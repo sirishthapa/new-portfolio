@@ -61,6 +61,8 @@ const handleSubmit = (e) => {
   const name = document.getElementById("name")
   const email = document.getElementById("email")
   const message = document.getElementById("message")
+  const sendButton = document.getElementById("send-button")
+  sendButton.value = "Sending..."
   emailjs
     .send(
       "service_yup5jwf",
@@ -79,9 +81,14 @@ const handleSubmit = (e) => {
         name.value = ""
         message.value = ""
         email.value = ""
+        sendButton.value = "Sent!"
+        setTimeout(() => {
+          sendButton.value = "Send"
+        }, 2000)
       },
       (error) => {
         console.log(error);
+        sendButton.value = "Try Again"
       }
     );
 }
