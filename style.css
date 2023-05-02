@@ -89,14 +89,16 @@ section {
     animation: floatImage 4s ease-in-out infinite;
 }
 
-@keyframes floatImage{
-    0%{
+@keyframes floatImage {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-2.5rem);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
@@ -124,11 +126,10 @@ span {
 
 .home-content p {
     font-size: 1.6rem;
-
 }
 
-.social-media a {
-    display: inline-flex;
+.samajik-sanjal a {
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     width: 4rem;
@@ -143,7 +144,7 @@ span {
 
 }
 
-.social-media a:hover {
+.samajik-sanjal a:hover {
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
@@ -234,6 +235,7 @@ span {
 .services-box svg {
     font-size: 5rem;
     color: var(--main-color);
+    margin-bottom: 20px;
 }
 
 .services-box h3 {
@@ -480,16 +482,20 @@ span {
     .footer {
         padding: 2rem 3%;
     }
-    .services{
-        padding-bottom:7rem ;
+
+    .services {
+        padding-bottom: 7rem;
     }
-    .contact{
+
+    .contact {
         min-height: auto;
     }
-    .nav-icon-button{
+
+    .nav-icon-button {
         display: block !important;
     }
-    .navbar{
+
+    .navbar {
         display: none;
     }
 }
@@ -533,45 +539,54 @@ span {
         flex-direction: column-reverse;
         align-items: center;
     }
+
     .home .home-img img {
         width: 70vw;
     }
-    .about{
+
+    .about {
         flex-direction: column;
     }
-    .about img{
+
+    .about img {
         width: 40vh;
     }
-    .services h2{
+
+    .services h2 {
         margin-bottom: 3rem;
     }
 
-   
+
 }
 
-@media (max-width :450px){
-    html{
+@media (max-width :450px) {
+    html {
         font-size: 50%;
     }
-    .about{
+
+    .about {
         width: 100%;
     }
-    .contact .inputbox-box input{
+
+    .contact .inputbox-box input {
         width: 100%;
     }
+
     .box {
         width: 95%;
         margin: 0 auto;
     }
+
     .box form {
         padding: 1rem 2rem;
     }
+
     .box form input {
         width: 95%;
     }
 }
 
-@media(max-width:365px){
+@media(max-width:365px) {
     .home-img img {
         width: 90vw;
     }
@@ -579,10 +594,12 @@ span {
     .about-img img {
         width: 90vw;
     }
-    .footer{
+
+    .footer {
         flex-direction: column-reverse;
     }
-    .footer p{
+
+    .footer p {
         text-align: center;
         margin-top: 2rem;
     }
