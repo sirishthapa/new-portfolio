@@ -206,21 +206,24 @@ span {
 
 .services-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
 
 }
 
 .services-container .services-box {
-    flex: 1 1 30rem;
+    /* flex: 1 1 30%; */
+    flex: 1;
     background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .services-container .services-box:hover {
